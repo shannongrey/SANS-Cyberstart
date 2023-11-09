@@ -1,0 +1,15 @@
+After identifying the correct profile, use Volatility to identify the process lists to see the flag.
+
+https://cpuu.hashnode.dev/an-introduction-to-volatility-3 utilized this resource to download Volatility3 on MacOS/Linux
+instal vol 3 dependencies: cd volatility3/
+pip3 install -r requirements.txt
+
+important syntax: vol.py -f <memoryfile> --profile=<profilename> <plugin>
+
+
+Find the memory profile using the imageinfo plugin
+vol.py -f memdump.mem imageinfo
+Run the pslist plugin to list all processes
+vol.py -f memdump.mem --profile=Win81U1x64 pslist
+Skim through the output to find the process name that looks unusual
+
