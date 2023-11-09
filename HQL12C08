@@ -1,0 +1,10 @@
+HQL12C08: Fork in the Road
+
+Agent, it's time we went on the offensive! We know the Bulldogs are putting their trojan horse robot plan into action, and whilst we're continuing to work specifically on stopping that we also want to disrupt as many of the Bulldogs operations as possible, to keep them distracted and slow them down.
+
+Here's one example we want your help with specifically. Remember the encryption tool Cryptonite that one of the Bulldogs created from the previous level? It uses server side commands to handle the encryption and we want you to use some kind of command injection to send the command for a fork bomb to DoS the website and take down the tool.
+
+Tip: Crash the website to get the flag!
+
+For command injection enter "cryptonite -n; :(){ :|: & };:" into the search bar
+flag:gRRkHHYLyj2EJjS8z3MJ
