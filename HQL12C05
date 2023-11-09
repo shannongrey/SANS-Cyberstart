@@ -36,32 +36,9 @@ DoMore: add byte [ecx],af
 
 
 
-I input: import socket
+Change "DoMore: add byte [ecx],af" to "DoMore: add byte [ecx],al"
 
-# Connect to Host
-host = ('services.cyberprotection.agency', 9999)
-Sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-Sock.connect((host))
+ASM_IS_EVIL_SAUCE, 
 
-# Recieve Values
-data = Sock.recv(20)
-item = data.strip("\n")
-items = data.split()
-print items
+flag: uPX2LtMkHXxWzLH31hKl
 
-# Math
-num = (int(items[0]) * int(items[1])) / int(items[2])
-
-# Send back to server 
-Sock.send(str(num))
-
-# Recieve Flag back
-print Sock.recv(1024)
-
-Sock.close()
-
-
-
-['34679', '7066', '15668']
-
-flag: 917035HrQ0PODo#
