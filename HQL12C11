@@ -1,0 +1,19 @@
+HQL12C11: Stop and Search
+
+Agent, with all of the knowledge we have gathered about the trojan robot and the gang's plans for it we have been working with the bank to improve their security. We're currently doing penetration tests on all their internal systems and we've identified a possible XSS flaw in their contact management system, in the contact search field to be specific.
+
+Here's a javascript payload, see if you can get it to work in the search field.
+
+<script>alert('Search this!!!')</script>
+
+Once this flaw has been fixed we are confident that the trojan robot the gang have been planning to send will have no effect on the banks system therefor rendering it useless! Good luck!
+
+Tip: Submit the payload correctly to get the flag.
+
+Hint: This page is filtered to prevent normal XSS but you should be able to hex encode the payload. Don't forget to browser encode it too!
+
+I translated <script>alert('Search this!!!')</script> to hexadecimal 
+
+3c7363726970743e616c6572742827536561726368207468697321212129273c2f7363726970743e
+
+
