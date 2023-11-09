@@ -1,0 +1,11 @@
+HQ L12C09: Open Port
+
+We believe they've set up a port running on an IP address that we've pointed services.cyberprotection.agency at, between ports 19000 and 20000. See if you can connect to it and help us find out what they're up to.
+
+Tip: Connect to the port to get the flag.
+
+nc -u services.cyberpotetection.agency 19991
+*Typed in something random*
+
+
+Flag: 3qwLD3tzAqLdCUdPSGZ1Hb
