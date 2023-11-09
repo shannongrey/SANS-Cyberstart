@@ -1,0 +1,20 @@
+HQL12C02: Nosey Robot
+
+
+int main()
+{
+  int take_photo = 0;
+  char command[8];
+  char *pictures = "take_pictures";
+  strcpy(command, pictures);
+
+  if (strcmp(command, "take_pictures") == 0) {
+    printf("%s\n", "CLICK_PHOTO_TAKEN");
+    take_photo = 1;
+  } else {
+    printf("%s\n", "SEG_FAULT_NO_PHOTO");
+  }
+  return 0;
+
+change command[8]; to char command[15];
+flag:1ePnaqG9DMjydnXmK27V
