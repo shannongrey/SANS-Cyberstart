@@ -1,0 +1,13 @@
+HQL12C07: Coffee Robot
+
+An inside agent has told us Charlie Hampton, one of the gang's smartest engineers, has been making detailed notes, instructions and schematic drawings of the robot and keeping them on one of his servers. Getting access to those drawings would really help us understand how this robot will operate.
+
+The problem is, we don't know which server he's keeping the plans on. All we do know is that Charlie owns a legit business, a coffee shop in East London, which he uses as a cover for his gang activities. It's a long shot but we do know they run a small server in the basement of the shop which controls their on-demand coffee ordering service. Go to the coffee ordering site, see if it's vulnerable. If it is see if you can find anything useful on the server.
+
+Tip: Find the drawings file to get the flag.
+
+For command injection you're going to enter commands directly into the "Your name" bar on the bottom of the site
+$(ls -a)
+$(ls -a ../robot-bank-job)
+$(cat ../robot-bank-job/.robot_sketches.txt)
+
