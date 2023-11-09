@@ -13,3 +13,4 @@ Run the pslist plugin to list all processes
 vol.py -f memdump.mem --profile=Win81U1x64 pslist
 Skim through the output to find the process name that looks unusual
 
+Flag: 19hglski!hg
