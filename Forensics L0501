@@ -1,0 +1,15 @@
+Forensics L0501: Start Line Setback
+
+Well, that wasn't a promising start. On our very first review, we found an image file on one of the company's servers which doesn't look quite right. We think whoever left it there has used a tool to add a passphrase to it and hide something inside. Take a look and see what you think.
+
+Tip: Open the file to find the flag.
+
+
+Steghide --info runner.jpg
+format: jpeg
+capacity: 112.6 KB
+I noticed there was an embedded file "flag.txt"
+I ran steghide --extract -sf runner.jpg
+wrote extracted data to "flag.txt"
+
+When I opened the flag.txt in plain text: Nice!!!! Here is the flag! QQPhgns98&"!
