@@ -1,0 +1,18 @@
+Forensics L04C02: Hidden Hyena 
+
+Our team in Kenya decided to take a page out of the hackers playbook and try sending an agent of their own along on one of the tours to follow a suspect they think might be one of the hackers. Our agent noticed them using a particular website which we believe had a secret message on it for him. Take a look at the network capture file and see if you can find anything interesting.
+
+Tip: The flag is in the pcap.
+
+The file included Tour Capture.pcapng is a pcap which insinuates Wireshark as the optimal tool
+I noticed in the wording of the briefing "network capture" was used which lead me to believe a HTTP filter was used to read the data
+I added "HTTP.Response" as the filter
+From there two packets had "text/html" in their descriptions
+After checking one and scrolling to the bottom of it's dataa I uncovered: <h1> Hello Again Agent</h1>\n. I tried to submit this as the flag but it didn't work.
+I right clicked on the text, Follow --> TCP Stream
+There was an odd Base64 string on top that I noticed due to the = at the end
+I threw the string ZmxhZyBpcyBoZ2prczJKRnUhaGY= into Cyberchef
+
+From_Base64('A-Za-z0-9+/=',true,false)
+
+flag is hgjks2JFu!hf
