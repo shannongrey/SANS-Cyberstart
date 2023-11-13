@@ -1,0 +1,18 @@
+ForensicsL05C03: Running Report
+
+Ok agent, it's time to start putting together a draft of the report we'll send on to the client and there's some specific information we need that you can help with. We have found the first time and date the hacker attempted to connect to our client's networks, but we cannot determine what their first actions were. Take a look at the network traffic and then see if you can use it to fill out the forensics report form.
+
+Tip: Answer the questions to get the flag.
+
+One of the resources listed on the challenge was Wireshark so I put the scan.pcapng file into the tool to review 
+I reviewed the network traffic to answer these questions: 
+Which type of reconnaissance scan is the traffic indicative of? Vertical, Horizontal, Aggressive or Passive?
+Vertical
+
+What are the six open ports?
+135, 139, 445, 5357, 6666, 7443
+
+What operating system is installed on victim VM?
+Windows
+
+Flag: KNifIJeaFLpYbitVPG0N
