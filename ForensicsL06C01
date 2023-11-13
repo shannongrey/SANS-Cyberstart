@@ -1,0 +1,16 @@
+ForensicsL06C01: Argentine Ambush
+
+From a meeting she had in Argentina we were able to intercept an image file she sent to the person she met with shortly after they departed. We think the file has a secret within it, and it looks like she used a tool that has the ability to use passphrases to hamper extracting hidden files. Other tracking we put in place has also revealed she has been visiting websites about encoding messages. See if you can put these bits of information to good use.
+
+Tip: Get into the file to get the flag.
+
+This challenge offered a tiny image named easter-island01.jpeg
+When the image is very tiny I can usually gather the flag isn't physically on the details of the image but rather a piece of date/file inside of it
+I Run through stegoveritas to find the trailing data
+Trailing data is "md5=ilovesteggivemetheflag".
+The md5 of that is "c53fa35e5b2ed699ccc304088c3d9c8e”.
+Put that in as password in an online steg cracker
+Get a base64-encoded string.
+Decoded is the flag: w1n_4_st3g0
+
+Flag: w1n_4_st3g0
