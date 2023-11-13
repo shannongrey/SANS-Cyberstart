@@ -1,0 +1,15 @@
+ForensicsL06C02: Missing Image
+
+Here's another file we intercepted a while back. We know it contains a secret, and we're pretty sure it's an image file. But for some reason, it doesn't seem to be detected as one. She has probably made a change to it in some way and our analysts were never able to figure out what.
+
+Tip: View the image to get the flag.
+
+The image easter-island02.jpeg it said error, file type not detected. there seemed to be an issue opening the file due to formatting
+
+Open image in Hex Editor to view formatting 
+I did some research of what a jpeg header should look like
+
+Change the first three bytes back to the correct header of “FF D8 FF” and saved into new image
+Opened the file and zoomed into the image
+
+Flag: H3ad3r$_4_W1nn3r$
