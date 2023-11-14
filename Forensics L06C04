@@ -1,0 +1,22 @@
+ForensicsL06C04: Island Image
+
+Here's a question for you, agent - one our team was never able to answer. We have a disk image file taken from the hacker which we know ran a number of oddly named executable files on the target machine, but we don't know what the names mean. Can you unravel the name of one of the programs?
+
+Tip: One of the filenames (excluding its extension) contains the flag.
+
+Export all the files using autopsy
+
+BUHLXCDDRO
+CZVUQZZFCO
+GDOIHCCUAQ
+GNIGJJYEJE
+JUBQJJJKEO
+RFQYIMUKKF
+UWKJHKTQCD
+WGZNZACGFG
+WMSZLLXDMK
+WYLMLAJODPU
+
+The last section has 11 letters, while the rest have 10. I threw the last file name into Cyberchef and using Ceasier Cipher it produced: 
+
+Flag: "PREFETCHWIN"
