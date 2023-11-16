@@ -1,0 +1,25 @@
+ForensicsL07C01: Icy Admin
+
+Icy Admin
+Ok agent, first up we need to recover the NTLM hash of the administrator account. We've had one of the research team send you a memory dump to take a look at.
+
+Tip: The hash is the flag.
+
+There was a file attached admin-memorydump.zip
+
+The easiest way to complete this challenge was to use volatility
+
+sudo ./volatility_2.6_lin64_standalone imageinfo -f memdump.mem
+
+sudo ./volatility_2.6_lin64_standalone --profile=Win81U1x64 -f memdump.mem hivelist
+
+sudo ./volatility_2.6_lin64_standalone --profile=Win81U1x64 -f memdump.mem hashdump -y 0xffffc00006e2c000 -s 0xffffc0000bedb000 >hashes.txt
+
+cat hashes.txt
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:fc525c9683e8fe067095ba2ddc971889:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+IEUser:1001:aad3b435b51404eeaad3b435b51404ee:fc525c9683e8fe067095ba2ddc971889:::
+sshd:1002:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+sshd_server:1003:aad3b435b51404eeaad3b435b51404ee:8d0a16cfc061c3359db455d00ec27035:::
+
+Flag: fc525c9683e8fe067095ba2ddc971889
