@@ -1,0 +1,16 @@
+ForensicsL07C04: Chilly Command
+
+We know the hackers gained access to a particular Windows box, but we're not sure exactly what they did. See if you can use the registry file to figure out what the last command was that they ran.
+
+Tip: Get the command to get the flag.
+
+
+File attached HKEY_CURRENT_USER.reg.xml
+Opened file with Notepad++
+Searched "command" given the tip is to find the command
+Found an encoded command JwBUAGgAMwBfAEIAMwBzAFQAXwBGAGwANABnAHMAXwBSAF8ARgAwAHIAMwBuADUAMQBjACcA
+cecoded with cyberchef
+'.T.h.3._.B.3.s.T._.F.l.4.g.s._.R._.F.0.r.3.n.5.1.c.'.
+
+
+Flag: '.T.h.3._.B.3.s.T._.F.l.4.g.s._.R._.F.0.r.3.n.5.1.c.'.
